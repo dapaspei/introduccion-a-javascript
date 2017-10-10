@@ -48,9 +48,9 @@ Todos los navegadores tienen "consola" o "terminal", para poner *comandos* y eje
 </script>
 ```
 ---
-# Variables
-## Definición
-### Es un elemento que contiene un valor. Y ese valor puede variar.
+# Variable
+### Es un elemento que contiene un valor. 
+### Y ese valor puede variar.
 +++
 # Sintaxis:
 ```
@@ -71,10 +71,10 @@ console.log(nombre);
 (si no lo entiendes, no te preocupes)
 +++
 # Tipos de datos
-## Cadenas de caracteres “Strings” (“Dani”)
-## Números enteros “integer” (10)
-## Números con decimales “float” (1.0)
-## Valores lógicos “bolean” (true/false)
+### Cadenas de caracteres “Strings” (“Dani”)
+### Números enteros “integer” (10)
+### Números con decimales “float” (1.0)
+### Valores lógicos “bolean” (true/false)
 +++
 # Comentarios
 ```
@@ -110,9 +110,9 @@ console.log(nombreCompleto);
 ---
 
 # Funciones Estructurales
-## Funciones mínimas para crear otras funciones
+### Funciones mínimas para crear otras funciones
 +++
-### Función IF (1)
+### IF (1)
 ```
 <script>
 nombre = "Dani";
@@ -125,7 +125,7 @@ if (nombre == "Dani") {
 </script>
 ```
 +++
-### Función IF (2)
+### IF (2)
 ```
 <script>
 edad = 30;
@@ -138,7 +138,7 @@ if (edad < 35) {
 </script>
 ```
 +++
-### Función IF (3)
+### IF (3)
 ```
 <script>
 admin = true;
@@ -151,7 +151,7 @@ if (admin) {
 </script>
 ```
 +++
-### Función IF (4)
+### IF (4)
 ```
 <script>
 // Varias sentencias IF - AND
@@ -166,7 +166,7 @@ if (nombre == "Dani" && admin) {
 </script>
 ```
 +++
-### Función IF (5)
+### IF (5)
 ```
 <script>
 // Varias sentencias IF - OR
@@ -181,7 +181,7 @@ if (nombre == "Dani" || admin) {
 </script>
 ```
 +++
-### Función SWITCH
+### SWITCH
 ```
 <script>
 nombre = "Dani";
@@ -200,7 +200,7 @@ switch (nombre) {
 </script>
 ```
 +++
-### Función FOR
+### FOR
 ```
 <script>
 nombre = "Dani";
@@ -232,7 +232,7 @@ sumar (12, numero1);
 </script>
 ```
 +++
-## Función (2) - Variable local
+## Variable local
 ```
 <script>
 numero1 = 3;
@@ -247,7 +247,7 @@ console.log("El resultado es: " sumaTotal);
 </script>
 ```
 +++
-## Función (3) - Variable global
+## Variable global
 ```
 <script>
 numero1 = 3;
@@ -263,7 +263,7 @@ console.log("El resultado es: " resultado);
 </script>
 ```
 +++
-## Función (4) - Valores por defecto (1)
+## Valores por defecto
 ```
 <script>
 iva = 1.21;
@@ -278,7 +278,7 @@ alert("El precio es: " + precio);
 ```
 
 +++
-## Función (5) - Prompt() (1)
+## Prompt() (1)
 ```
 <script>
 tuNombre = prompt("Introduce tu nombre:");
@@ -286,7 +286,7 @@ Console.log("Tu nombre es: " + tuNombre);
 </script>
 ```
 +++
-## Función (5) - Prompt() (2)
+## Prompt() (2)
 ```
 <script>
 function nombreCompleto(){
@@ -322,7 +322,8 @@ console.log(texto);
 </script>
 ```
 +++
-## Función “recortar” de String (1)
+## “Recortar” (1)
+### Función de String
 ```
 <script>
 nombre = "Dani"; 
@@ -337,7 +338,8 @@ console.log(textosinespacios);
 </script>
 ```
 +++
-## Función “recortar” de String (2)
+## “Recortar” (2)
+### Función de String
 ```
 <script>
 nombre = "Dani"; 
@@ -352,7 +354,8 @@ console.log(textosinespacios);
 </script>
 ```
 +++
-## Función “mayúsculas/minúsculas” de String
+## “Mayúsculas” y “Minúsculas” 
+### Función de String
 ```
 <script>
 nombre = "Dani"; 
@@ -366,7 +369,8 @@ console.log(otrotexto);
 </script>
 ```
 +++
-## Función “trocear” de String
+## “Trocear” 
+### Función de String
 ```
 <script>
 nombre = "Dani"; 
@@ -379,7 +383,8 @@ console.log(otrotexto);
 </script>
 ```
 +++
-## Función “repetir” de String
+## “Repetir” 
+### Función de String
 ```
 <script>
 nombre = "Dani"; 
@@ -392,7 +397,7 @@ console.log(otrotexto);
 </script>
 ```
 +++
-## Funciones Condicionales (1)
+## Condicionales (1)
 ```
 <script>
 nombre = "Dani"; 
@@ -407,7 +412,7 @@ console.log(res);
 </script>
 ```
 +++
-## Funciones Condicionales (2)
+## Condicionales (2)
 ```
 <script>
 nombre = "Dani"; 
@@ -422,7 +427,7 @@ console.log(res);
 </script>
 ```
 +++
-## Funciones Condicionales (3)
+## Condicionales (3)
 ```
 <script>
 nombre = "Dani"; 
