@@ -302,7 +302,6 @@ nombre2 = nombreCompleto();
 alert(nombre2);
 nombre3 = nombreCompleto(); 
 alert(nombre3);
-...
 </script>
 ```
 ---
