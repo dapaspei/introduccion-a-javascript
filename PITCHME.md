@@ -491,11 +491,42 @@ apellido = String("Pastor");
 texto = "texto con espacios.";
 console.log(texto);
 
-res = nombre.concat(" ",apellido);
+res = nombre.concat(" "+apellido);
 console.log(res);
 // Devolvería Dani Pastor
 </script>
 ```
+---
+# ARRAYS
++++
++++
++++
++++
++++
+---
+# BUCLES
++++
++++
++++
++++
++++
+---
+# FUNCIONES NATIVAS
++++
++++
++++
++++
++++
+---
+# OBJETOS
++++
++++
++++
++++
++++
+---
+# HTML
+---
 +++
 +++
 +++
