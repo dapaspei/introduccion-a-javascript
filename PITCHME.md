@@ -30,7 +30,7 @@ sumar (3, 2);
 El código javascript se ejecuta entre las etiquetas:
 ```
 <script>
-Mi código 
+	Mi código 
 </script>
 ```
 +++
@@ -89,22 +89,22 @@ console.log(nombre);
 # Operaciones Aritméticas
 ```
 <script>
-edad = 30;
-total = edad + 9;    // Suma
-// total = edad - 9; // Resta
-// total = edad * 2; // Multiplicación
-// total = edad / 2; // División
-console.log(total);
+	edad = 30;
+	total = edad + 9;    // Suma
+	// total = edad - 9; // Resta
+	// total = edad * 2; // Multiplicación
+	// total = edad / 2; // División
+	console.log(total);
 </script>
 ```
 +++
 # Unir cadenas (Concatenación)
 ```
 <script>
-nombre = "Dani";
-apellido = "Pastor";
-nombreCompleto = nombre + " " + apellido;
-console.log(nombreCompleto);
+	nombre = "Dani";
+	apellido = "Pastor";
+	nombreCompleto = nombre + " " + apellido;
+	console.log(nombreCompleto);
 </script>
 ```
 ---
@@ -115,103 +115,103 @@ console.log(nombreCompleto);
 ### IF (1)
 ```
 <script>
-nombre = "Dani";
-// Se pregunta y devuelve "true" o "false"
-if (nombre == "Dani") { 
-	console.log("Hola: " + nombre);
-} else {
-	console.log("No sé quien eres :-( " + nombre);
-}
+	nombre = "Dani";
+	// Se pregunta y devuelve "true" o "false"
+	if (nombre == "Dani") { 
+		console.log("Hola: " + nombre);
+	} else {
+		console.log("No sé quien eres :-( " + nombre);
+	}
 </script>
 ```
 +++
 ### IF (2)
 ```
 <script>
-edad = 30;
-// Si la variable edad es menor que 35 entra en el primer bloque
-if (edad < 35) { 
-	console.log("Tienes menos de 35 años");
-} else {
-	console.log("Tienes más de 35 años");
-}
+	edad = 30;
+	// Si la variable edad es menor que 35 entra en el primer bloque
+	if (edad < 35) { 
+		console.log("Tienes menos de 35 años");
+	} else {
+		console.log("Tienes más de 35 años");
+	}
 </script>
 ```
 +++
 ### IF (3)
 ```
 <script>
-admin = true;
-// Si admin es true, entrará en el primer bloque
-if (admin) { 
-	console.log("Eres el administrado!");
-} else {
-	console.log("No eres el administrador");
-}
+	admin = true;
+	// Si admin es true, entrará en el primer bloque
+	if (admin) { 
+		console.log("Eres el administrado!");
+	} else {
+		console.log("No eres el administrador");
+	}
 </script>
 ```
 +++
 ### IF (4)
 ```
 <script>
-// Varias sentencias IF - AND
-nombre = "Dani";
-admin = false;
-// true && false
-if (nombre == "Dani" && admin) { 
-	console.log("Hola: " + nombre +", eres el administrador!");
-} else {
-	console.log("No eres administrador: " + nombre);
-}
+	// Varias sentencias IF - AND
+	nombre = "Dani";
+	admin = false;
+	// true && false
+	if (nombre == "Dani" && admin) { 
+		console.log("Hola: " + nombre +", eres el administrador!");
+	} else {
+		console.log("No eres administrador: " + nombre);
+	}
 </script>
 ```
 +++
 ### IF (5)
 ```
 <script>
-// Varias sentencias IF - OR
-nombre = "Dani";
-admin = false;
-// true || false
-if (nombre == "Dani" || admin) { 
-	console.log("Hola: " + nombre +", eres el administrador!");
-} else {
-	console.log("No eres administrador: " + nombre);
-}
+	// Varias sentencias IF - OR
+	nombre = "Dani";
+	admin = false;
+	// true || false
+	if (nombre == "Dani" || admin) { 
+		console.log("Hola: " + nombre +", eres el administrador!");
+	} else {
+		console.log("No eres administrador: " + nombre);
+	}
 </script>
 ```
 +++
 ### SWITCH
 ```
 <script>
-nombre = "Dani";
-// Varias condiciones a la vez
-switch (nombre) {
-	case "Dani":
-		console.log("El usuario es Dani.");
-		break; // se sale del switch
-	case "John":
-		console.log("El usuario es John.");
-		break;
-	default:
-	  console.log("Usuario desconocido.");
-
-}
+	nombre = "Dani";
+	// Varias condiciones a la vez
+	switch (nombre) {
+		case "Dani":
+			console.log("El usuario es Dani.");
+			break; // se sale del switch
+		case "John":
+			console.log("El usuario es John.");
+			break;
+		default:
+		  console.log("Usuario desconocido.");
+	
+	}
 </script>
 ```
 +++
 ### FOR
 ```
 <script>
-nombre = "Dani";
-// bucles: repetir el contenido varias veces
-
-// inicializa una variable llamada 'cont' al valor 0
-// pregunta si el valor es menor que 5 (como un 'if')
-// suma 1 al valor actual de 'cont'
-for (var cont = 0; cont < 5; cont++) {
-	  console.log("El valor del contador es: " + cont);
-}
+	nombre = "Dani";
+	// bucles: repetir el contenido varias veces
+	
+	// inicializa una variable llamada 'cont' al valor 0
+	// pregunta si el valor es menor que 5 (como un 'if')
+	// suma 1 al valor actual de 'cont'
+	for (var cont = 0; cont < 5; cont++) {
+		  console.log("El valor del contador es: " + cont);
+	}
 </script>
 ```
 ---
@@ -220,60 +220,60 @@ for (var cont = 0; cont < 5; cont++) {
 +++
 ```
 <script>
-numero1 = 3;
-numero2 = 33;
-// Definimos una función con dos argumentos
-function sumar(num1,num2) {
-	console.log("El resultado es: " num1 + num2);
-}
-// llamar a la función con los dos números.
-sumar (numero1, numero2);
-sumar (12, numero1);
+	numero1 = 3;
+	numero2 = 33;
+	// Definimos una función con dos argumentos
+	function sumar(num1,num2) {
+		console.log("El resultado es: " num1 + num2);
+	}
+	// llamar a la función con los dos números.
+	sumar (numero1, numero2);
+	sumar (12, numero1);
 </script>
 ```
 +++
 ## Variable local
 ```
 <script>
-numero1 = 3;
-numero2 = 33;
-// Definimos una función con dos argumentos
-function sumar(num1,num2) {
-	**sumaTotal** = num1 + num2;
-}
-// llamar a la función con los dos números.
-sumar (numero1, numero2);
-console.log("El resultado es: " sumaTotal);
+	numero1 = 3;
+	numero2 = 33;
+	// Definimos una función con dos argumentos
+	function sumar(num1,num2) {
+		**sumaTotal** = num1 + num2;
+	}
+	// llamar a la función con los dos números.
+	sumar (numero1, numero2);
+	console.log("El resultado es: " sumaTotal);
 </script>
 ```
 +++
 ## Variable global
 ```
 <script>
-numero1 = 3;
-numero2 = 33;
-// Definimos una función con dos argumentos
-function sumar(num1,num2) {
-	**var sumaTotal** = num1 + num2;
-	return sumaTotal;
-}
-// llamar a la función con los dos números.
-resultado = sumar (45, numero2);
-console.log("El resultado es: " resultado);
+	numero1 = 3;
+	numero2 = 33;
+	// Definimos una función con dos argumentos
+	function sumar(num1,num2) {
+		**var sumaTotal** = num1 + num2;
+		return sumaTotal;
+	}
+	// llamar a la función con los dos números.
+	resultado = sumar (45, numero2);
+	console.log("El resultado es: " resultado);
 </script>
 ```
 +++
 ## Valores por defecto
 ```
 <script>
-iva = 1.21;
-
-function sumar_iva(precio,iva) {
-	var precioFinal = precio * iva;
-	return precioFinal;
-}
-precio = sumar_iva(45, iva);
-alert("El precio es: " + precio);
+	iva = 1.21;
+	
+	function sumar_iva(precio,iva) {
+		var precioFinal = precio * iva;
+		return precioFinal;
+	}
+	precio = sumar_iva(45, iva);
+	alert("El precio es: " + precio);
 </script>
 ```
 
@@ -281,27 +281,27 @@ alert("El precio es: " + precio);
 ## Prompt() (1)
 ```
 <script>
-tuNombre = prompt("Introduce tu nombre:");
-Console.log("Tu nombre es: " + tuNombre);
+	tuNombre = prompt("Introduce tu nombre:");
+	Console.log("Tu nombre es: " + tuNombre);
 </script>
 ```
 +++
 ## Prompt() (2)
 ```
 <script>
-function nombreCompleto(){
-	var nombre= prompt("Introduce tu nombre:");
-	var apellidos= prompt("Introduce tus apellidos:");
-	
-	var nombreYapellidos = nombre + " " + apellidos;
-	return nombreYapellidos;
-}
-nombre1 = nombreCompleto(); 
-alert(nombre1);
-nombre2 = nombreCompleto(); 
-alert(nombre2);
-nombre3 = nombreCompleto(); 
-alert(nombre3);
+	function nombreCompleto(){
+		var nombre= prompt("Introduce tu nombre:");
+		var apellidos= prompt("Introduce tus apellidos:");
+		
+		var nombreYapellidos = nombre + " " + apellidos;
+		return nombreYapellidos;
+	}
+	nombre1 = nombreCompleto(); 
+	alert(nombre1);
+	nombre2 = nombreCompleto(); 
+	alert(nombre2);
+	nombre3 = nombreCompleto(); 
+	alert(nombre3);
 </script>
 ```
 ---
@@ -312,12 +312,12 @@ alert(nombre3);
 ## Cadenas de Texto (Strings)
 ```
 <script>
-nombre = "Dani"; 
-apellido = String("Pastor");
-texto = "       texto con espacios.       ";
-console.log(nombre);
-console.log(apellido);
-console.log(texto);
+	nombre = "Dani"; 
+	apellido = String("Pastor");
+	texto = "       texto con espacios.       ";
+	console.log(nombre);
+	console.log(apellido);
+	console.log(texto);
 </script>
 ```
 +++
@@ -325,15 +325,15 @@ console.log(texto);
 ### Función de String
 ```
 <script>
-nombre = "Dani"; 
-apellido = String("Pastor");
-texto = "       texto con espacios.       ";
-console.log(nombre);
-console.log(apellido);
-console.log(texto);
-// .trim() quita los espacios de una cadena de texto.
-textosinespacios = texto.trim();
-console.log(textosinespacios);
+	nombre = "Dani"; 
+	apellido = String("Pastor");
+	texto = "       texto con espacios.       ";
+	console.log(nombre);
+	console.log(apellido);
+	console.log(texto);
+	// .trim() quita los espacios de una cadena de texto.
+	textosinespacios = texto.trim();
+	console.log(textosinespacios);
 </script>
 ```
 +++
@@ -341,15 +341,15 @@ console.log(textosinespacios);
 ### Función de String
 ```
 <script>
-nombre = "Dani"; 
-apellido = String("Pastor");
-texto = "       texto con espacios.       ";
-console.log(nombre);
-console.log(apellido);
-console.log(texto);
-textosinespacios = texto.trimLeft();
-textosinespacios = texto.trimRight();
-console.log(textosinespacios);
+	nombre = "Dani"; 
+	apellido = String("Pastor");
+	texto = "       texto con espacios.       ";
+	console.log(nombre);
+	console.log(apellido);
+	console.log(texto);
+	textosinespacios = texto.trimLeft();
+	textosinespacios = texto.trimRight();
+	console.log(textosinespacios);
 </script>
 ```
 +++
@@ -357,14 +357,14 @@ console.log(textosinespacios);
 ### Función de String
 ```
 <script>
-nombre = "Dani"; 
-apellido = String("Pastor");
-texto = "texto CON espacios.";
-console.log(texto);
-otrotexto = texto.toUpperCase();
-console.log(otrotexto);
-otrotexto = texto.toLowerCase();
-console.log(otrotexto);
+	nombre = "Dani"; 
+	apellido = String("Pastor");
+	texto = "texto CON espacios.";
+	console.log(texto);
+	otrotexto = texto.toUpperCase();
+	console.log(otrotexto);
+	otrotexto = texto.toLowerCase();
+	console.log(otrotexto);
 </script>
 ```
 +++
@@ -372,13 +372,13 @@ console.log(otrotexto);
 ### Función de String
 ```
 <script>
-nombre = "Dani"; 
-apellido = String("Pastor");
-texto = "algo CON espacios.";
-console.log(texto);
-otrotexto = texto.slice(0,4);
-console.log(otrotexto);
-// Devolvería -> algo
+	nombre = "Dani"; 
+	apellido = String("Pastor");
+	texto = "algo CON espacios.";
+	console.log(texto);
+	otrotexto = texto.slice(0,4);
+	console.log(otrotexto);
+	// Devolvería -> algo
 </script>
 ```
 +++
@@ -386,130 +386,363 @@ console.log(otrotexto);
 ### Función de String
 ```
 <script>
-nombre = "Dani"; 
-apellido = String("Pastor");
-texto = "algo CON espacios.";
-console.log(texto);
-otrotexto = texto.repeat(2);
-console.log(otrotexto);
-// Devolvería -> algo CON espaciosalgo CON espacios
+	nombre = "Dani"; 
+	apellido = String("Pastor");
+	texto = "algo CON espacios.";
+	console.log(texto);
+	otrotexto = texto.repeat(2);
+	console.log(otrotexto);
+	// Devolvería -> algo CON espaciosalgo CON espacios
 </script>
 ```
 +++
 ## Condicionales (1)
 ```
 <script>
-nombre = "Dani"; 
-apellido = String("Pastor");
-texto = "texto con espacios.";
-console.log(texto);
-
-res = texto.search("con");
-console.log(res);
-// Devolvería 6 -> el número del carácter donde empieza la palabra a buscar
-// Devolvería -1 si no encuentra el texto
+	nombre = "Dani"; 
+	apellido = String("Pastor");
+	texto = "texto con espacios.";
+	console.log(texto);
+	
+	res = texto.search("con");
+	console.log(res);
+	// Devolvería 6 -> el número del carácter donde empieza la palabra a buscar
+	// Devolvería -1 si no encuentra el texto
 </script>
 ```
 +++
 ## Condicionales (2)
 ```
 <script>
-nombre = "Dani"; 
-apellido = String("Pastor");
-texto = "texto con espacios.";
-console.log(texto);
-
-res = nombre.startsWith("D");
-console.log(res);
-// Devolvería 'true'.
-// Devolvería 'false' si no empieza por la letra(s).
+	nombre = "Dani"; 
+	apellido = String("Pastor");
+	texto = "texto con espacios.";
+	console.log(texto);
+	
+	res = nombre.startsWith("D");
+	console.log(res);
+	// Devolvería 'true'.
+	// Devolvería 'false' si no empieza por la letra(s).
 </script>
 ```
 +++
 ## Condicionales (3)
 ```
 <script>
-nombre = "Dani"; 
-apellido = String("Pastor");
-texto = "texto con espacios.";
-console.log(texto);
-
-res = nombre.endsWith("i");
-console.log(res);
-// Devolvería 'true'.
-// Devolvería 'false' si no acaba por la letra(s) 'i'.
+	nombre = "Dani"; 
+	apellido = String("Pastor");
+	texto = "texto con espacios.";
+	console.log(texto);
+	
+	res = nombre.endsWith("i");
+	console.log(res);
+	// Devolvería 'true'.
+	// Devolvería 'false' si no acaba por la letra(s) 'i'.
 </script>
 ```
 +++
 ## Funciones Especiales (1)
 ```
 <script>
-nombre = "Dani"; 
-apellido = String("Pastor");
-texto = "texto con espacios.";
-console.log(texto);
-
-res = texto.split(" ");
-console.log(res);
-// Devolvería -> Array [ "texto", "con", "espacios]
+	nombre = "Dani"; 
+	apellido = String("Pastor");
+	texto = "texto con espacios.";
+	console.log(texto);
+	
+	res = texto.split(" ");
+	console.log(res);
+	// Devolvería -> Array [ "texto", "con", "espacios]
 </script>
 ```
 +++
 ## Funciones Especiales (2)
 ```
 <script>
-nombre = "Dani"; 
-apellido = String("Pastor");
-texto = "texto con espacios.";
-console.log(texto);
-
-res = nombre.length;
-console.log(res);
-// Devolvería 4 -> El número de caracteres de la variable nombre
+	nombre = "Dani"; 
+	apellido = String("Pastor");
+	texto = "texto con espacios.";
+	console.log(texto);
+	
+	res = nombre.length;
+	console.log(res);
+	// Devolvería 4 -> El número de caracteres de la variable nombre
 </script>
 ```
 +++
 ## Funciones Especiales (3)
 ```
 <script>
-nombre = "Dani"; 
-apellido = String("Pastor");
-texto = "texto con espacios.";
-console.log(texto);
-
-res = texto.charAt(2);
-console.log(res);
-// Devolvería x -> El carácter en la posición 0, 1, 2.
+	nombre = "Dani"; 
+	apellido = String("Pastor");
+	texto = "texto con espacios.";
+	console.log(texto);
+	
+	res = texto.charAt(2);
+	console.log(res);
+	// Devolvería x -> El carácter en la posición 0, 1, 2.
 </script>
 ```
 +++
 ## Funciones Especiales (4)
 ```
 <script>
-nombre = "Dani"; 
-apellido = String("Pastor");
-texto = "texto con espacios.";
-console.log(texto);
-
-res = nombre.concat(" "+apellido);
-console.log(res);
-// Devolvería Dani Pastor
+	nombre = "Dani"; 
+	apellido = String("Pastor");
+	texto = "texto con espacios.";
+	console.log(texto);
+	
+	res = nombre.concat(" "+apellido);
+	console.log(res);
+	// Devolvería Dani Pastor
 </script>
 ```
 ---
 # ARRAYS
+### Es un conjunto de elementos guardados en una variable
 +++
+```
+<script>
+	// Forma 1
+	nombres_1 = new Array();
+	// Inicializa un objeto.
+	console.log(nombres_1);
+	// Devuelve un array vacío.
+	
+	// Forma 2
+	nombres_2 = Array();
+	// Inicializa un objeto.
+	console.log(nombres_2);
+	// Devuelve un array vacío.
+</script>
+```
 +++
+```
+<script>
+	// Forma 3 y la recomendable!
+	nombres_3 = [];
+	// Inicializa un objeto.
+	console.log(nombres_3);
+	// Devuelve un array vacío.
+</script>
+```
 +++
+```
+<script>
+	nombres_1 = new Array();
+	nombres_2 = Array();
+	nombres_3 = [];
+	
+	nombres = [ “Dani”, “John”, “Herald”];
+	console.log(nombres);
+	// Devuelve un array con los tres nombres
+	console.log(nombres.length);
+	// Devuelve 3. El número de elementos que tiene el array
+</script>
+```
 +++
+```
+<script>
+	nombres_1 = new Array();
+	nombres_2 = Array();
+	nombres_3 = [];
+	
+	nombres = [ “Dani”, “John”, “Herald”];
+	console.log(nombres);
+	// Devuelve un array con los tres nombres
+	console.log(nombres.length);
+	// Devuelve 3. El número de elementos que tiene el array
+</script>
+```
 +++
+```
+<script>
+	edades = [8, 12, 34, 23, 87];
+	console.log(edades);
+	// Devuelve un array con 5 elementos
+	console.log(edades.length);
+	// Devuelve 5. El número de elementos que tiene el array
+</script>
+```
++++
+### Crear elementos. ¡Ojo!
+```
+<script>
+	edades = [8];
+	// Crea un array con un elemento, el 8.
+	edades = Array(8);
+	// Crea un array con 8 elementos!!
+	console.log(edades);        // Devuelve un array vacío.
+	console.log(edades.length); // Devuelve 8
+</script>
+```
++++
+### Añadir elementos
+```
+<script>
+	nombres = [];
+	// Añadir elementos.
+	nombres.push("Dani");
+	console.log(nombres);
+	// Devuelve "Dani"
+	console.log(nombres.length);
+	// Devuelve 1
+</script>
+```
++++
+### Acceder a un elemento
+```
+<script>
+	nombres = ["Dani"];
+	// Añadir elementos.
+	nombres.push("John");
+	nombres.push("Maria");
+	nombres.push("Eldelbar");
+	console.log(nombres);
+	// Devuelve "Dani", "John", "Maria", "Eldelbar"
+	console.log(nombres[0]);
+	// Devuelve "Dani"
+</script>
+```
++++
+### Borrar un elemento
+```
+<script>
+	nombres = ["Dani"];
+	// Añadir elementos.
+	nombres.push("John");
+	nombres.push("Maria");
+	delete nombres[1];
+	// Borra "John", dejando el "hueco" en el array.
+	console.log(nombres);
+	console.log(nombres.length);
+	// Devuelve 3
+</script>
+```
++++
+### Actualizar elementos
+```
+<script>
+	nombres = ["Dani"];
+	// Añadir elementos.
+	nombres.push("John");
+	nombres.push("Maria");
+	nombres[1] = "Peter";
+	// Cambia "John" por "Peter"
+	console.log(nombres);
+	// Devuelve "Dani", "Peter", "Maria"
+</script>
+```
 ---
+
 # BUCLES
 +++
+### FOR
+```
+<script>
+	for (var contador = 0; // Se ejecuta únicamente 1 vez
+			 contador < 10;    // Es una comparación
+			 contador++        // contador = contador + 1
+												 // Incrementa la variable una unidad
+			 ) {
+			 // El código entre paréntesis se ejecuta si la comparación
+			 // da como resultado -> 'true'
+			 console.log("El contador vale: " + contador);
+			 // Aparece desde 0 --- 9
+			 // No aparece 10, porque 10 no es < 10.
+	}
+</script>
+```
 +++
+### WHILE (1)
+```
+<script>
+  // Similar al FOR. Se ejecuta de forma indefinida
+  // hasta que se indica lo contrario.
+  var nombre = "Dani";
+  var contador = 0;
+	while (nombre == "Dani") {
+		console.log("El contador vale: " + contador);
+		contador++;
+	}	
+	// OJO!!! Esto crea un bucle infinito que bloqueará el navegador.
+</script>
+```
 +++
+### WHILE (2)
+```
+<script>
+  var admin = true;  // El usuario es administrador.
+  // while (admin == true) {
+	while (admin) { 
+		console.log("Soy el administrador.");
+		admin = false;
+		// Dejará de ejecutarse el bucle, porque admin valdrá 'false'
+	}	
+</script>
+```
 +++
+### DO WHILE
+```
+<script>
+  var admin = true;  // El usuario es administrador.
+  
+  // El bucle se ejecutará al menos 1 vez.
+	do {
+		console.log("Soy el administrador.");
+		admin = false;
+		// Dejará de ejecutarse el bucle, porque admin valdrá 'false'
+	} while (admin);
+</script>
+```
 +++
+### Recorrer Arrays (1)
+```
+<script>
+  var nombres = ["Dani", "Juan", "Petra", "Luisa", "Juan"];
+  // dato es el **valor** de cada elemento del array.
+  // aunque sólo tenga una parte el for, se ejecutará hasta que 
+  // haya nombres en el array.
+  
+  for (var dato of nombres) {
+	  // dato OF nombres -> devuelve el valor
+	  console.log(dato);
+  }
+  // Devuelve -> Dani, Juan, Petra, Luisa, Juan.
+  </script>
+```
++++
+### Recorrer Arrays (2)
+```
+<script>
+  var nombres = ["Dani", "Juan", "Petra", "Luisa", "Juan"];
+  // dato es el **índice** de cada elemento del array.
+  // aunque sólo tenga una parte el for, se ejecutará hasta que 
+  // haya nombres en el array.
+  
+  for (var dato in nombres) {
+	  // dato IN nombres -> devuelve el índice
+	  console.log(dato);
+  }
+  // Devuelve -> 0, 1, 2, 3, 4
+  </script>
+```
++++
+### Recorrer Arrays (3)
+```
+<script>
+  var nombres = ["Dani", "Juan", "Petra", "Luisa", "Juan"];
+  // dato es el **índice** de cada elemento del array.
+  // aunque sólo tenga una parte el for, se ejecutará hasta que 
+  // haya nombres en el array.
+  
+  for (var contador=0; contador < nombres.length; contador++) {
+	  // nombres.length es el número de elementos del array
+	  console.log(nombres[contador]);
+	  // nombres[contador] se corresponderá con cada nombre.
+  }
+  // Devuelve -> Dani, Juan, Petra, Luisa, Juan.
+  </script>
+```
 ---
 # FUNCIONES NATIVAS
 +++
