@@ -746,10 +746,165 @@ console.log(nombre);
 ---
 # FUNCIONES NATIVAS
 +++
+### encodeURI()
+```
+<script>
+	// codifica el texto para convertirlo en una URL válida
+	tmp = encodeURI("http://google.com/search?q=algo que buscar"); 
+	console.log (tmp); 
+	// Devolverá: http://google.com/search?q=algo%20que%20buscar
+</script>
+```
+### Es importante para generar nuestras propias URLs en Javascript.
 +++
+### decodeURI()
+```
+<script>
+	// DEcodifica la URL válida para convertirla en texto
+	tmp = decodeURI("http://google.com/search?q=algo%20que%20buscar"); 
+	console.log (tmp); 
+	// Devolverá: http://google.com/search?q=algo que buscar
+	// Ahora la URL sólo es válida hasta "algo".
+</script>
+```
 +++
+### alert()
+```
+<script>
+	// Tiene un solo argumento
+	// Muestra un mensaje en una nueva ventana.
+	// Tiene un único botón -> Aceptar.
+	alert("Hola mundo!");
+	// Esta función no devuelve nada
+	tmp = alert("Adios!");
+	console.log(tmp);
+	// Devolverá: undefined
+</script>
+```
 +++
+### prompt()
+```
+<script>
+	// Tiene un solo argumento
+	// Podemos introducir un texto.
+	// Tiene dos botones -> Aceptar / Cancelar.
+	tmp = prompt("Nombre: ");
+	console.log(tmp);
+	// Esta función devuelve el nombre introducido
+	// ---
+	// Pero si le damos al botón "Cancelar", devolverá:
+	// NULL
+	// 'null' es un valor especial.
+</script>
+```
 +++
+### confirm()
+```
+<script>
+	// Tiene un solo argumento
+	// Muestra un texto.
+	// Tiene dos botones -> Aceptar / Cancelar.
+	tmp = confirm("¿Deseas salir de la página?");
+	console.log(tmp);
+	// Esta función devuelve 
+	// 'true' si le damos a aceptar
+	// 'false' si le damos a cancelar.
+	if (confirm("¿Deseas salir de la página?")) {
+		alert("Es una lástima, pero ... Adiós!");
+	}
+</script>
+```
++++
+### JSON
+#### JavaScript Object Notation
+> Es un formato de texto para intercambiar datos entre distintos lenguajes de programación.
++++
+### JSON
+```
+<script>
+	nombres = ["Dani", "Jaimito", "Juanito", "Jorgito", "John"];
+	console.log(nombres);
+	tmp = JSON.stringify(nombres);
+	console.log(tmp);
+	// Devuelve un String con los nombres también, pero en un único string.
+</script>
+```
++++
+### setTimeout() (1)
+```
+<script>
+	// Recibe dos argumentos
+	// Argumento 1: la función a ejecutar. 
+	// Argumento 2: cuándo se ejecutará. En milisegundos!!
+	function prueba() {
+		console.log("Me estoy ejecutando!");
+	}
+	setTimeout(prueba, 3000);
+	// Tardará 3 segundos en aparecer el mensaje en la consola.
+</script>
+```
++++
+### setTimeout() (2)
+```
+<script>
+	// Recibe dos argumentos
+	// Argumento 1: la función a ejecutar. 
+	// Argumento 2: cuándo se ejecutará. En milisegundos!!
+	function prueba() {
+		console.log("Me estoy ejecutando!");
+	}
+	setTimeout(prueba, 3000);
+	// Tardará 3 segundos en aparecer el mensaje en la consola.
+  console.log("El resultado de la suma es: ",  2 + 3);
+  // ¿Se mostrará el resultado de la suma después del mensaje de 3 segundos??
+  // NO! Se ejecutará primero el resultado de la suma y luego el mensaje
+</script>
+```
++++
+### setInterval
+#### Ejecutar un código de forma ilimitada durante X segundos
+```
+<script>
+	// Recibe dos argumentos
+	// Argumento 1: la función a ejecutar. 
+	// Argumento 2: el intervalo de tiempo en milisegundos!!
+	function prueba() {
+		console.log("Me estoy ejecutando!");
+	}
+	setInterval(prueba, 3000);
+	// Cada 3 segundos aparecerá el mensaje en la consola.
+	// Esto NO bloqueará el navegador!!
+	// Se puede utilizar para comprobar las Cookies.
+  </script>
+```
++++
+### Funciones anónimas
+```
+<script>
+	// Definimos una función dentro de otra función.
+	setInterval(function(){
+		console.log("Me estoy ejecutando!");
+	}, 3000);
+	// Cada 3 segundos aparecerá el mensaje en la consola.
+  </script>
+```
++++
+### Typeof
+```
+<script>
+	// Definimos una función dentro de otra función.
+	setInterval(function(){
+	  // Únicamente le damos el valor 1 al contador si no está definido
+	  // Sino, contador siempre valdría 1.
+		if(typeof contador == "undefined"){
+			contador = 1;
+		}
+		console.log(contador + " - se ejecuta correctamente!");
+		contador++;
+	}, 3000);
+	// Cada 3 segundos aparecerá el mensaje en la consola.
+  </script>
+```
 ---
 # OBJETOS
 +++
