@@ -36,7 +36,7 @@ El código javascript se ejecuta entre las etiquetas:
 +++
 Se puede, pero a partir de html5, NO hace falta poner:
 ```
-<script **type=“text/javascript”**>
+<script type=“text/javascript”>
 ...
 ```
 +++
@@ -908,15 +908,189 @@ console.log(nombre);
 ---
 # OBJETOS
 +++
+### Tratar con OBJETOS consiste en parametrizar un objeto de la vida real y dotarles de funcionalidades.
 +++
+```
+<script>
+	// Objeto "móvil".
+	movil = {
+		// Parámetros
+		marca: "iPhone",
+		modelo:  "X",
+		precio: 1.200,
+		procesadores: 2,
+		ram:2,
+	};
+	
+	console.log("La marca es: " + movil.marca);
+  </script>
+```
 +++
+```
+<script>
+	// Objeto "móvil".
+	movil = {
+		// Parámetros
+		marca: "iPhone",
+		modelo:  "X",
+		precio: 1.200,
+		procesadores: 2,
+		ram:2,
+		// Funcionalidades
+		llamar: function(nombre) {
+			console.log("Estoy llamando a " + nombre +" con el "+this.marca); 
+			// This es el objeto que llama a la función
+		}
+	};
+	movil.llamar("Dani");
+	// Salida: Estoy llamando a Dani con el iPhone
+	</script>
+```
 +++
-+++
+```
+<script>
+	// Objeto "persona".
+	usuario = {
+		// Parámetros
+		nombre: "Dani", apellido: "Pastor", 	edad: 33,	permisos: true,
+		hijos: ["Alejandro", "Javier"],
+		// Funcionalidades
+		nombre_completo: function() {
+			alert(this.nombre + " " + this.apellido);
+		}
+		mayor_edad: function() {
+			if (this.edad >= 18) {
+				console.log("Eres mayor de edad!");
+			} else {
+				console.log("Eres menor de edad!");
+			}
+		}
+	};
+	usuario.nombre_completo();
+	// Devuelve: Dani Pastor
+	usuario.mayor_edad();
+	// Devuelve: Eres mayor de edad!
+	</script>
+```
 ---
-# HTML
----
+# HTML y Javascript
 +++
+### Acceso por ‘id’
+```
+<div>
+	<div id="lorem" class=“mitexto”>
+		Lorem ipsum ad his scripts blandit ....
+	</div>
+	<form action=“” method=“” name=“miformulario”>
+		<p>Nombre:</p> <input type=“text” name=“nombre”>
+		<p>Email:</p> 	<input type=“text” name=“email”>
+		<p>Contraseña:</p> <input type=“text” name=“password”>
+	</form>
+</div>
+// Se sitúa debajo para que el id="lorem" exista.
+<script>
+	// Coge el elemento que tenga el Id -> Lorem
+	console.log(document.getElementById("lorem").innerHTML = "Nuevo texto....");
+	// Cambia el texto por "Nuevo Texto"
+</script>
+```
 +++
+### Window.onload
+```
+<script>
+	// Obliga a que se carga el html antes de ejecutar Javascript
+	window.onload = function() {
+		var name = prompt("Nombre:");
+		var apellido = prompt("Apellidos");
+		document.getElementById("lorem").innerHTML = name +" "+apellido;
+	}	
+</script>
+</head>
+<body>
+	<div>
+		<div id="lorem" class=“mitexto”>
+			Lorem ipsum ad his scripts blandit ....
+		</div>
+		<form action=“” method=“” name=“miformulario”>
+			<p>Nombre:</p> <input type=“text” name=“nombre”>
+			<p>Email:</p> 	<input type=“text” name=“email”>
+			<p>Contraseña:</p> <input type=“text” name=“password”>
+		</form>
+	</div>
+```
 +++
+### Acceso por ‘clase’
+```
+<script>
+	window.onload = function() {
+		var name = prompt("Nombre:");
+		var apellido = prompt("Apellidos");
+		// Acceso por el nombre de la clase.
+		document.getElementsByClassName("mitexto")[0].innerHTML = name +" "+apellido;
+	}	
+</script>
+</head>
+<body>
+	<div>
+		<div id="lorem" class=“mitexto”>
+			Lorem ipsum ad his scripts blandit ....
+		</div>
+		<form action=“” method=“” name=“miformulario”>
+			<p>Nombre:</p> <input type=“text” name=“nombre”>
+			<p>Email:</p> 	<input type=“text” name=“email”>
+			<p>Contraseña:</p> <input type=“text” name=“password”>
+		</form>
+	</div>
+```
 +++
+### Acceso por ‘nombres’
+```
+<script>
+	window.onload = function() {
+		var name = prompt("Nombre:");
+		var email = prompt("Email");
+		var password = prompt("Password");
+		document.getElementsByName("nombre")[0].value = name;
+		document.getElementsByName("email")[0].value = email;
+		document.getElementsByName("password")[0].value = password;
+	}	
+</script>
+</head>
+<body>
+	<div>
+		<div id="lorem" class=“mitexto”>
+			Lorem ipsum ad his scripts blandit ....
+		</div>
+		<form action=“” method=“” name=“miformulario”>
+			<p>Nombre:</p> <input type=“text” name=“nombre”>
+			<p>Email:</p> 	<input type=“text” name=“email”>
+			<p>Contraseña:</p> <input type=“text” name=“password”>
+		</form>
+	</div>
+```
 +++
+### Formularios
+```
+<script>
+	window.onload = function() {
+		var name = prompt("Nombre:");
+		var email = prompt("Email");
+		var password = prompt("Password");
+		window.miformulario.nombre.value = name;
+		window.miformulario.email.value = email;
+		window.miformulario.password.value = password;
+	}	
+</script>
+</head>
+<body>
+	<div>
+		<div id="lorem" class="mitexto">
+			Lorem ipsum ad his scripts blandit ....
+		</div>
+		<form action=“” method=“” name="miformulario">
+			<p>Nombre:</p> <input type=“text” name="nombre">
+			<p>Email:</p> 	<input type=“text” name="email">
+			<p>Contraseña:</p> <input type=“text” name="password">
+		</form>
+	</div>
+```
