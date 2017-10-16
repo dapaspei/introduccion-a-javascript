@@ -824,11 +824,13 @@ console.log(nombre);
 ### JSON
 ```
 <script>
-	nombres = ["Dani", "Jaimito", "Juanito", "Jorgito", "John"];
+	nombres = ["Dani", "Jaimito", "Juanito", "Jorgito",
+	 "John"];
 	console.log(nombres);
 	tmp = JSON.stringify(nombres);
 	console.log(tmp);
-	// Devuelve un String con los nombres también, pero en un único string.
+	// Devuelve un String con los nombres también, 
+	// pero en un único string.
 </script>
 ```
 +++
@@ -842,7 +844,8 @@ console.log(nombre);
 		console.log("Me estoy ejecutando!");
 	}
 	setTimeout(prueba, 3000);
-	// Tardará 3 segundos en aparecer el mensaje en la consola.
+	// Tardará 3 segundos en aparecer el mensaje en 
+	// la consola.
 </script>
 ```
 +++
@@ -856,10 +859,12 @@ console.log(nombre);
 		console.log("Me estoy ejecutando!");
 	}
 	setTimeout(prueba, 3000);
-	// Tardará 3 segundos en aparecer el mensaje en la consola.
+	// Tardará 3 segundos en aparecer el mensaje en consola.
   console.log("El resultado de la suma es: ",  2 + 3);
-  // ¿Se mostrará el resultado de la suma después del mensaje de 3 segundos??
-  // NO! Se ejecutará primero el resultado de la suma y luego el mensaje
+  // ¿Se mostrará el resultado de la suma después del 
+  // mensaje de 3 segundos??
+  // NO! Se ejecutará primero el resultado de la suma y 
+  // luego el mensaje
 </script>
 ```
 +++
