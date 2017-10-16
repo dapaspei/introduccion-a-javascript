@@ -953,16 +953,11 @@ console.log(nombre);
 ```
 +++
 ```
-<script>
-	// Objeto "persona".
 	usuario = {
-		// Parámetros
 		nombre: "Dani", apellido: "Pastor", 	edad: 33,	
 		permisos: true, 	hijos: ["Juanito", "Jaimito"],
-		// Funcionalidades
 		nombre_completo: function() {
-			alert(this.nombre + " " + this.apellido);
-		}
+			alert(this.nombre + " " + this.apellido);}
 		mayor_edad: function() {
 			if (this.edad >= 18) {
 				console.log("Eres mayor de edad!");
@@ -971,11 +966,8 @@ console.log(nombre);
 			}
 		}
 	};
-	usuario.nombre_completo();
-	// Devuelve: Dani Pastor
-	usuario.mayor_edad();
-	// Devuelve: Eres mayor de edad!
-</script>
+	usuario.nombre_completo(); // Devuelve: Dani Pastor
+	usuario.mayor_edad(); 	// Devuelve: Eres mayor de edad!
 ```
 ---
 # HTML y Javascript
