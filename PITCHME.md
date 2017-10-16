@@ -942,7 +942,8 @@ console.log(nombre);
 		procesadores: 2, ram:2,
 		// Funcionalidades
 		llamar: function(nombre) {
-			console.log("Estoy llamando a " + nombre +" con el "+this.marca); 
+			console.log("Estoy llamando a " + nombre +
+			" con el "+this.marca); 
 			// This es el objeto que llama a la función
 		}
 	};
@@ -956,8 +957,8 @@ console.log(nombre);
 	// Objeto "persona".
 	usuario = {
 		// Parámetros
-		nombre: "Dani", apellido: "Pastor", 	edad: 33,	permisos: true,
-		hijos: ["Alejandro", "Javier"],
+		nombre: "Dani", apellido: "Pastor", 	edad: 33,	
+		permisos: true, 	hijos: ["Juanito", "Jaimito"],
 		// Funcionalidades
 		nombre_completo: function() {
 			alert(this.nombre + " " + this.apellido);
