@@ -640,9 +640,9 @@ console.log(nombre);
 ```
 <script>
 	for (var contador = 0; // Se ejecuta únicamente 1 vez
-			 contador < 10;    // Es una comparación
-			 contador++        // contador = contador + 1
-												 // Incrementa la variable una unidad
+			 contador < 10;  // Es una comparación
+			 contador++    // contador = contador + 1
+									 // Incrementa la variable una unidad
 			 ) {
 			 // El código entre paréntesis se ejecuta si la comparación
 			 // da como resultado -> 'true'
