@@ -513,7 +513,11 @@ console.log(nombre);
 	// Inicializa un objeto.
 	console.log(nombres_2);
 	// Devuelve un array vacío.
-
+</script>
+```
++++
+```
+<script>
 	// Forma 3 y la recomendable!
 	nombres_3 = [];
 	// Inicializa un objeto.
