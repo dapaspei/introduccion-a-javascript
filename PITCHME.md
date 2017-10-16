@@ -1037,10 +1037,10 @@ console.log(nombre);
 	window.onload = function() {
 		var name = prompt("Nombre:");
 		var email = prompt("Email");
-		var password = prompt("Password");
+		var pass = prompt("Password");
 		document.getElementsByName("nombre")[0].value=name;
 		document.getElementsByName("email")[0].value=email;
-		document.getElementsByName("password")[0].value=password;
+		document.getElementsByName("password")[0].value=pass;
 	}	
 </script>
 </head>
@@ -1056,7 +1056,7 @@ console.log(nombre);
 		<form action=“” method=“” name=“miformulario”>
 			<p>Nombre:</p> <input type=“text” name=“nombre”>
 			<p>Email:</p> 	<input type=“text” name=“email”>
-			<p>Contraseña:</p> <input type=“text” name=“password”>
+			<p>Contraseña:</p> <input type=“text” name=“pass”>
 		</form>
 	</div>
 ```
@@ -1067,10 +1067,10 @@ console.log(nombre);
 	window.onload = function() {
 		var name = prompt("Nombre:");
 		var email = prompt("Email");
-		var password = prompt("Password");
+		var pass = prompt("Password");
 		window.miformulario.nombre.value = name;
 		window.miformulario.email.value = email;
-		window.miformulario.password.value = password;
+		window.miformulario.pass.value = pass;
 	}	
 </script>
 </head>
@@ -1086,7 +1086,7 @@ console.log(nombre);
 		<form action=“” method=“” name="miformulario">
 			<p>Nombre:</p> <input type=“text” name="nombre">
 			<p>Email:</p> 	<input type=“text” name="email">
-			<p>Contraseña:</p> <input type=“text” name="password">
+			<p>Contraseña:</p> <input type=“text” name="pass">
 		</form>
 	</div>
 ```
