@@ -901,7 +901,8 @@ console.log(nombre);
 <script>
 	// Definimos una función dentro de otra función.
 	setInterval(function(){
-	  // Únicamente le damos el valor 1 al contador si no está definido
+	  // Únicamente le damos el valor 1 al contador 
+	  // si no está definido
 	  // Sino, contador siempre valdría 1.
 		if(typeof contador == "undefined"){
 			contador = 1;
@@ -930,19 +931,15 @@ console.log(nombre);
 	};
 	
 	console.log("La marca es: " + movil.marca);
-  </script>
+</script>
 ```
 +++
 ```
 <script>
-	// Objeto "móvil".
 	movil = {
 		// Parámetros
-		marca: "iPhone",
-		modelo:  "X",
-		precio: 1.200,
-		procesadores: 2,
-		ram:2,
+		marca: "iPhone", modelo:  "X", precio: 1.200,
+		procesadores: 2, ram:2,
 		// Funcionalidades
 		llamar: function(nombre) {
 			console.log("Estoy llamando a " + nombre +" con el "+this.marca); 
@@ -951,7 +948,7 @@ console.log(nombre);
 	};
 	movil.llamar("Dani");
 	// Salida: Estoy llamando a Dani con el iPhone
-	</script>
+</script>
 ```
 +++
 ```
@@ -977,7 +974,7 @@ console.log(nombre);
 	// Devuelve: Dani Pastor
 	usuario.mayor_edad();
 	// Devuelve: Eres mayor de edad!
-	</script>
+</script>
 ```
 ---
 # HTML y Javascript
