@@ -644,8 +644,8 @@ console.log(nombre);
 			 contador++    // contador = contador + 1
 				 // Incrementa la variable una unidad
 			 ) {
-			 // El código entre paréntesis se ejecuta si la comparación
-			 // da como resultado -> 'true'
+			 // El código entre paréntesis se ejecuta si la 
+			 // comparación da como resultado -> 'true'
 			 console.log("El contador vale: " + contador);
 			 // Aparece desde 0 --- 9
 			 // No aparece 10, porque 10 no es < 10.
@@ -664,7 +664,8 @@ console.log(nombre);
 		console.log("El contador vale: " + contador);
 		contador++;
 	}	
-	// OJO!!! Esto crea un bucle infinito que bloqueará el navegador.
+	// OJO!!! Esto crea un bucle infinito que bloqueará 
+	// el navegador.
 </script>
 ```
 +++
@@ -676,7 +677,8 @@ console.log(nombre);
 	while (admin) { 
 		console.log("Soy el administrador.");
 		admin = false;
-		// Dejará de ejecutarse el bucle, porque admin valdrá 'false'
+		// Dejará de ejecutarse el bucle, porque admin 
+		// valdrá 'false'
 	}	
 </script>
 ```
@@ -690,7 +692,8 @@ console.log(nombre);
 	do {
 		console.log("Soy el administrador.");
 		admin = false;
-		// Dejará de ejecutarse el bucle, porque admin valdrá 'false'
+		// Dejará de ejecutarse el bucle, porque admin 
+		// valdrá 'false'
 	} while (admin);
 </script>
 ```
@@ -700,8 +703,8 @@ console.log(nombre);
 <script>
   var nombres = ["Dani", "Juan", "Petra", "Luisa", "Juan"];
   // dato es el **valor** de cada elemento del array.
-  // aunque sólo tenga una parte el for, se ejecutará hasta que 
-  // haya nombres en el array.
+  // aunque sólo tenga una parte el for, se ejecutará 
+  // hasta que haya nombres en el array.
   
   for (var dato of nombres) {
 	  // dato OF nombres -> devuelve el valor
@@ -716,8 +719,8 @@ console.log(nombre);
 <script>
   var nombres = ["Dani", "Juan", "Petra", "Luisa", "Juan"];
   // dato es el **índice** de cada elemento del array.
-  // aunque sólo tenga una parte el for, se ejecutará hasta que 
-  // haya nombres en el array.
+  // aunque sólo tenga una parte el for, se ejecutará 
+  // hasta que haya nombres en el array.
   
   for (var dato in nombres) {
 	  // dato IN nombres -> devuelve el índice
@@ -732,9 +735,8 @@ console.log(nombre);
 <script>
   var nombres = ["Dani", "Juan", "Petra", "Luisa", "Juan"];
   // dato es el **índice** de cada elemento del array.
-  // aunque sólo tenga una parte el for, se ejecutará hasta que 
-  // haya nombres en el array.
-  
+  // aunque sólo tenga una parte el for, se ejecutará 
+  // hasta que haya nombres en el array.
   for (var contador=0; contador < nombres.length; contador++) {
 	  // nombres.length es el número de elementos del array
 	  console.log(nombres[contador]);
