@@ -979,16 +979,15 @@ console.log(nombre);
 		Lorem ipsum ad his scripts blandit ....
 	</div>
 	<form action=“” method=“” name=“miformulario”>
-		<p>Nombre:</p> <input type=“text” name=“nombre”>
-		<p>Email:</p> 	<input type=“text” name=“email”>
-		<p>Contraseña:</p> <input type=“text” name=“password”>
+		<p>Nombre:</p><input type=“text” name=“nombre”>
+		<p>Email:</p><input type=“text” name=“email”>
+		<p>Contraseña:</p><input type=“text” name=“password”>
 	</form>
-</div>
-// Se sitúa debajo para que el id="lorem" exista.
+</div> // Se sitúa debajo para que el id="lorem" exista.
 <script>
 	// Coge el elemento que tenga el Id -> Lorem
-	console.log(document.getElementById("lorem").innerHTML = "Nuevo texto....");
-	// Cambia el texto por "Nuevo Texto"
+	console.log(document.getElementById("lorem").innerHTML = 
+	"Nuevo texto...."); // Cambia el texto por "Nuevo Texto"
 </script>
 ```
 +++
@@ -1008,12 +1007,7 @@ console.log(nombre);
 		<div id="lorem" class=“mitexto”>
 			Lorem ipsum ad his scripts blandit ....
 		</div>
-		<form action=“” method=“” name=“miformulario”>
-			<p>Nombre:</p> <input type=“text” name=“nombre”>
-			<p>Email:</p> 	<input type=“text” name=“email”>
-			<p>Contraseña:</p> <input type=“text” name=“password”>
-		</form>
-	</div>
+...
 ```
 +++
 ### Acceso por ‘clase’
@@ -1032,15 +1026,10 @@ console.log(nombre);
 		<div id="lorem" class=“mitexto”>
 			Lorem ipsum ad his scripts blandit ....
 		</div>
-		<form action=“” method=“” name=“miformulario”>
-			<p>Nombre:</p> <input type=“text” name=“nombre”>
-			<p>Email:</p> 	<input type=“text” name=“email”>
-			<p>Contraseña:</p> <input type=“text” name=“password”>
-		</form>
-	</div>
+...
 ```
 +++
-### Acceso por ‘nombres’
+### Acceso por ‘nombres’ (1)
 ```
 <script>
 	window.onload = function() {
@@ -1053,6 +1042,10 @@ console.log(nombre);
 	}	
 </script>
 </head>
+```
++++
+### Acceso por ‘nombres’ (2)
+```
 <body>
 	<div>
 		<div id="lorem" class=“mitexto”>
@@ -1066,7 +1059,7 @@ console.log(nombre);
 	</div>
 ```
 +++
-### Formularios
+### Formularios (1)
 ```
 <script>
 	window.onload = function() {
@@ -1079,6 +1072,10 @@ console.log(nombre);
 	}	
 </script>
 </head>
+```
++++
+### Formularios (2)
+```
 <body>
 	<div>
 		<div id="lorem" class="mitexto">
