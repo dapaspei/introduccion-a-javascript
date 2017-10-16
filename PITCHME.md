@@ -239,8 +239,8 @@ console.log(nombre);
 	numero2 = 33;
 	// Definimos una función con dos argumentos
 	function sumar(num1,num2) {
-		**sumaTotal** = num1 + num2;
-	}
+		sumaTotal = num1 + num2;
+	
 	// llamar a la función con los dos números.
 	sumar (numero1, numero2);
 	console.log("El resultado es: " sumaTotal);
@@ -254,7 +254,7 @@ console.log(nombre);
 	numero2 = 33;
 	// Definimos una función con dos argumentos
 	function sumar(num1,num2) {
-		**var sumaTotal** = num1 + num2;
+		var sumaTotal = num1 + num2;
 		return sumaTotal;
 	}
 	// llamar a la función con los dos números.
@@ -513,11 +513,7 @@ console.log(nombre);
 	// Inicializa un objeto.
 	console.log(nombres_2);
 	// Devuelve un array vacío.
-</script>
-```
-+++
-```
-<script>
+
 	// Forma 3 y la recomendable!
 	nombres_3 = [];
 	// Inicializa un objeto.
