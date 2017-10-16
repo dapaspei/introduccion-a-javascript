@@ -998,7 +998,8 @@ console.log(nombre);
 	window.onload = function() {
 		var name = prompt("Nombre:");
 		var apellido = prompt("Apellidos");
-		document.getElementById("lorem").innerHTML = name +" "+apellido;
+		document.getElementById("lorem").innerHTML = 
+		name +" "+apellido;
 	}	
 </script>
 </head>
@@ -1017,7 +1018,8 @@ console.log(nombre);
 		var name = prompt("Nombre:");
 		var apellido = prompt("Apellidos");
 		// Acceso por el nombre de la clase.
-		document.getElementsByClassName("mitexto")[0].innerHTML = name +" "+apellido;
+		document.getElementsByClassName("mitexto")[0].innerHTML 
+		= name +" "+apellido;
 	}	
 </script>
 </head>
@@ -1036,9 +1038,9 @@ console.log(nombre);
 		var name = prompt("Nombre:");
 		var email = prompt("Email");
 		var password = prompt("Password");
-		document.getElementsByName("nombre")[0].value = name;
-		document.getElementsByName("email")[0].value = email;
-		document.getElementsByName("password")[0].value = password;
+		document.getElementsByName("nombre")[0].value=name;
+		document.getElementsByName("email")[0].value=email;
+		document.getElementsByName("password")[0].value=password;
 	}	
 </script>
 </head>
